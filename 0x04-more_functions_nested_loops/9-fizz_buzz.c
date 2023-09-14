@@ -31,4 +31,6 @@ int main(void)
 			printf("%i ", i);
 		}
 	}
+	printf("\n");
+	retuen (0);
 }
