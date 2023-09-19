@@ -21,13 +21,18 @@ int _strlen(char *s)
 /**
  * puts_half -  prints half of a string
  *
- * @s: input string
+ * @str: input string
  */
 
 void puts_half(char *str)
 {
 	int len = _strlen(str);
-	int i = (len - 1) / 2;
+	int i;
+
+	if (len % 2 != 0)
+		i = (len - 1) / 2;
+	else
+		i = len / 2;
 
 	while (i < len)
 	{
