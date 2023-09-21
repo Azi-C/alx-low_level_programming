@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
- * _strncat -  function that concatenates two strings.
- *
- * @dest: first string
- * @src: string added at the end
- * @n: nomber of bytes
- *
- * Return;  pointer to the resulting string dest
+ * _strncat - concatenates two strings
+ * @dest: input string destination
+ * @src: input string to append
+ * @n: number of characters to append
+ * Return: pointer to the resulting string
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -25,6 +23,5 @@ char *_strncat(char *dest, char *src, int n)
 	}
 
 	dest[l + i] = '\0';
-
 	return (dest);
 }
