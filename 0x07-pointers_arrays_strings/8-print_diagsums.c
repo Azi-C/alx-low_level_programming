@@ -22,11 +22,11 @@ void print_diagsums(int *a, int size)
 
 	while (i < size)
 	{
-		s1 += a[i][i];
-		s2 += a[i][j];
+		s1 = s1 + a[i][i];
+		s2 = s2 + a[i][j];
 		i++;
 		j--;
 	}
 
-	printf ("%d, %d\n", s1, s2);
+	printf("%d, %d\n", s1, s2);
 }
