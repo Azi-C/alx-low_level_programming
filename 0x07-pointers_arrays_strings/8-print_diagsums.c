@@ -10,23 +10,15 @@
 void print_diagsums(int *a, int size)
 {
 
+	int diagonal = 0;
+	int anti_diagonal = 0;
 	int i;
-	int j;
-	int s1;
-	int s2;
 
-	i = 0;
-	j = size - 1;
-	s1 = 0;
-	s2 = 0;
+	for (i = 0; i < size; i++)
+		diagonal += a[(i * size) + i];
 
-	while (i < size)
-	{
-		s1 = s1 + a[i][i];
-		s2 = s2 + a[i][j];
-		i++;
-		j--;
-	}
+	for (i = 1; i <= size; i++)
+		anti_diagonal += a[(i * size) - i];
 
-	printf("%d, %d\n", s1, s2);
+	printf("%d, %d\n", diagonal, anti_diagonal);
 }
