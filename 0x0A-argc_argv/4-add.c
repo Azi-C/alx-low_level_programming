@@ -23,9 +23,7 @@ int _isdigit(char *s)
  * main -  program that adds positive numbers
  * @argc: number of arguments
  * @argv: array of these arguments
- * Return: 0 if no number is passed,
- * 1 if one of the number contains symbols,
- * otherwise sum of the arguments
+ * Return: 0 when success, 1 if one of the arg is not a number
  */
 
 int main(int argc, char *argv[])
@@ -36,6 +34,7 @@ int main(int argc, char *argv[])
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 	else
 	{
@@ -50,5 +49,7 @@ int main(int argc, char *argv[])
 			sum += atoi(argv[i]);
 		}
 		printf ("%d\n", sum);
+
+		return (0);
 	}
 }
