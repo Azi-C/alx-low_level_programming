@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
 		}
 		num = atoi(argv[1]);
 
-		for (j = 0; j < 5 && num; j++)
+		for (j = 0; j < 5 && num >= 0; j++)
 		{
 			while (num >= coins [j])
 			{
