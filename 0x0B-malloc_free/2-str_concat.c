@@ -1,10 +1,9 @@
 #include "main.h"
 
 /**
- * str_concat - function that concatenates two strings
- * @s1: first input string
- * @s2: second input string
- * Result: pointer to the concatenation of the strings
+ * _strlen - function that count the number of chars in a string
+ * @s: input string
+ * Result: lenght of a string
  */
 
 int _strlen(char *s)
