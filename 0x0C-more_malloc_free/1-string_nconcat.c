@@ -19,7 +19,7 @@ int _strlen(char *s)
 	return (len);
 }
 
-/***
+/**
  * string_nconcat - function that concatenates two strings.
  * @s1: first input
  * @s2: second input
