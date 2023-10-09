@@ -20,8 +20,8 @@ int *array_range(int min, int max)
 	if (ptr == NULL)
 		return (NULL);
 
-	for (i = 0; i <= (min - max); i++)
-		ptr[i] = min + i;
+	for (i = 0; i <= (max - min); i++)
+		*(ptr + i) = min + i;
 
 	return (ptr);
 }
