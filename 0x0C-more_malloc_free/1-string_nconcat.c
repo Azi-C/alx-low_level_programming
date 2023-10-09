@@ -38,12 +38,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	len1 = _strlen(s1);
 	len2 = _strlen(s2);
 
-	if (n >= len2)
+	if ((int)n >= len2)
 	{
 		n = len2;
 	}
 
-	if (n < 0)
+	if ((int)n < 0)
 	{
 		return (NULL);
 	}
