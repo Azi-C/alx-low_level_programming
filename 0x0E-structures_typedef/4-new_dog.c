@@ -2,21 +2,16 @@
 
 /**
  * _strlen - calculates the length of a string
- * @c: char input
- * Return: the length of c
+ * @c: input string
+ * Return: the length of s
  */
 
-int _strlen(char *c)
+int _strlen(char *s)
 {
-	int len = 0;
+	if (*s)
+		return (_strlen(s + 1) + 1);
 
-	while (*c)
-	{
-		len ++;
-		c++;
-	}
-
-	return (len);
+	return (0);
 }
 
 /**
@@ -44,7 +39,7 @@ char *_strcpy(char *dest, char *src)
  * @name: dog's name
  * @age: dog's age
  * @owner: dog's owner
- * Return: new dog
+ * Return: pointer to new dog, NULL otherwise
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
