@@ -6,7 +6,7 @@
  * Return the lenght of s
  */
 
-int _strlen( const char *s)
+int _strlen(const char *s)
 {
 	if (s)
 		return (1 + _strlen(s + 1));
@@ -25,7 +25,7 @@ list_t *add_node(list_t **head, const char *str)
 	list_t *temp = malloc(sizeof(list_t));
 	int len = _strlen(str);
 
-	if(!temp)
+	if (!temp)
 		return (NULL);
 
 	temp->str = strdup(str);
@@ -36,4 +36,4 @@ list_t *add_node(list_t **head, const char *str)
 	return (*head);
 }
 
-	
+
