@@ -4,7 +4,7 @@
  * add_nodeint - adds a new node at the beginning of a listint_t list
  * @h: the linked list
  * @n: the element to add
- * Return:  address of the new element, or NULL if it failed
+ * Return: address of the new element, or NULL if it failedi
  */
 
 listint_t *add_nodeint(listint_t **head, const int n)
