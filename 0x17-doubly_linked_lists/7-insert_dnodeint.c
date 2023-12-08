@@ -49,7 +49,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 	if (idx == 0)
 	{
-		return (insert_new(tmp, n));
+		return (insert_new(new, n));
 	}
 	if (idx == 1)
 		return (add_dnodeint_end(h, n));
